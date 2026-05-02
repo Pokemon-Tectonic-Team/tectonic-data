@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build:
@@ -16,9 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '22'
 
       - run: npm install
 
@@ -33,8 +31,17 @@ jobs:
           git push
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          keep_files: true
+        run: |
+          cp dist/loadedData-dev.json /tmp/
+          cp dist/pokePartyMappedEncodings.json /tmp/
+          if git fetch origin gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf . 2>/dev/null || true
+          fi
+          cp /tmp/loadedData-dev.json .
+          cp /tmp/pokePartyMappedEncodings.json .
+          git add loadedData-dev.json pokePartyMappedEncodings.json
+          git diff --staged --quiet || git commit -m "Deploy [skip ci]"
+          git push origin gh-pages
