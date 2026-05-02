@@ -1,0 +1,14 @@
+{
+  "name": "tectonic-data",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "data": "tsx src/loadTectonicRepoData.ts",
+    "data:dev": "tsx src/loadTectonicRepoData.ts dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.19.3",
+    "typescript": "^5"
+  }
+}
