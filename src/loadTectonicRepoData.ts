@@ -27,7 +27,7 @@ const MAPPINGS_PATH = path.join(REPO_ROOT, "pokePartyMappedEncodings.json");
 async function handleFiles<T>(paths: string[], processor: (files: string[]) => T, dev: boolean): Promise<T> {
     const baseUrl = dev
         ? "https://raw.githubusercontent.com/Pokemon-Tectonic-Team/Pokemon-Tectonic-Content/refs/heads/main/"
-        : `https://raw.githubusercontent.com/Pokemon-Tectonic-Team/Pokemon-Tectonic/${PUBLIC_VERSION_COMMIT}/`;
+        : `https://raw.githubusercontent.com/Pokemon-Tectonic-Team/Pokemon-Tectonic-Content/${PUBLIC_VERSION_COMMIT}/`;
 
     const responses = await Promise.all(paths.map((path) => fetch(baseUrl + path)));
     const files: string[] = [];
