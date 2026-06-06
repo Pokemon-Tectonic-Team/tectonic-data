@@ -7,7 +7,7 @@
     "data:dev": "tsx src/loadTectonicRepoData.ts dev"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.19.42",
     "tsx": "^4.19.3",
     "typescript": "^5"
   }
