@@ -18,7 +18,7 @@ import {
 } from "./loadedDataClasses";
 import { parseEncounterFile, parseNewLineCommaFile, parseStandardFile, parseVersionFile } from "./tectonicFileParsers";
 
-const PUBLIC_VERSION_COMMIT = "15ca404c46f0fb00a76eac40fb8865d9b0320a27";
+const PUBLIC_VERSION_COMMIT = "e49a53026a363d8c81aca8b22b4e22e7d2cab580";
 
 const REPO_ROOT = path.join(__dirname, "..");
 const DIST_DIR = path.join(REPO_ROOT, "dist");
