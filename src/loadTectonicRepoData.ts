@@ -300,7 +300,7 @@ async function loadData(dev: boolean = false): Promise<void> {
     // Fetch the data and load it into a usable format
     const version: string = await handleFiles(
         ["Plugins/_Settings/GameSettings.rb"],
-        (f: string[]) => parseVersionFile(f[0]),
+        (f: string[]) => parseVersionFile(f[0], dev),
         dev,
     );
     const loadedData: LoadedDataJson = {
