@@ -1,20 +1,21 @@
 import { KVPair, LoadedData, RawEncounterMap, RawEncounterTable } from "./loadedDataClasses";
 
-export function parseVersionFile(file: string): string {
+export function parseVersionFile(file: string, dev: boolean = false): string {
     // parsing ruby code as text is So Normal
     let version: string = "";
-    let dev: boolean = false;
     file.split(/\r?\n/).forEach((line) => {
         const terms = line.split(" = ");
         if (terms.length > 1) {
             if (terms[0].trim() === "GAME_VERSION") {
                 version = terms[1].trim().replace(/"/g, "");
             }
-            if (terms[0].trim() === "DEV_VERSION") {
-                if (terms[1].trim() === "true") {
-                    dev = true;
-                }
-            }
+            // Dev flag is unreliable when parsing the codebase
+            // Use the passed parameter instead
+            // if (terms[0].trim() === "DEV_VERSION") {
+            //     if (terms[1].trim() === "true") {
+            //         dev = true;
+            //     }
+            // }
         }
     });
 
