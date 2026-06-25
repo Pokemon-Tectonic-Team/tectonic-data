@@ -3290,7 +3290,8 @@
     "STICKYSPINES": 1367,
     "TAILSLAM": 1368,
     "ROCKDRIVE": 1369,
-    "UMBRAGE": 1370
+    "UMBRAGE": 1370,
+    "VENT": 1371
   },
   "heldItems": {
     "AIRBALLOON": 1,
