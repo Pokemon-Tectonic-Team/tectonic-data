@@ -3291,7 +3291,8 @@
     "TAILSLAM": 1368,
     "ROCKDRIVE": 1369,
     "UMBRAGE": 1370,
-    "VENT": 1371
+    "VENT": 1371,
+    "FROSTFIREBLAST": 1372
   },
   "heldItems": {
     "AIRBALLOON": 1,
