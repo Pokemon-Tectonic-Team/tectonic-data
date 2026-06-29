@@ -3292,7 +3292,10 @@
     "ROCKDRIVE": 1369,
     "UMBRAGE": 1370,
     "VENT": 1371,
-    "FROSTFIREBLAST": 1372
+    "FROSTFIREBLAST": 1372,
+    "FLAMEFIST": 1373,
+    "FLUXFIST": 1374,
+    "FROSTFIST": 1375
   },
   "heldItems": {
     "AIRBALLOON": 1,
