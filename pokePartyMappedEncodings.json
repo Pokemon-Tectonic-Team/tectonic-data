@@ -3307,7 +3307,9 @@
     "ELECTROCUTE": 1384,
     "OUTWIT": 1385,
     "APEXPREDATION": 1386,
-    "RIDDLEMETHIS": 1387
+    "RIDDLEMETHIS": 1387,
+    "BATTERYACID": 1388,
+    "PLOW": 1389
   },
   "heldItems": {
     "AIRBALLOON": 1,
