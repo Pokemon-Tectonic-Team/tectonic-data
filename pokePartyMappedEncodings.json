@@ -3311,7 +3311,9 @@
     "BATTERYACID": 1388,
     "PLOW": 1389,
     "BURSTHAYMAKER": 1390,
-    "CYCLONE": 1391
+    "CYCLONE": 1391,
+    "GEASGALE": 1392,
+    "WAYWARDWIND": 1393
   },
   "heldItems": {
     "AIRBALLOON": 1,
