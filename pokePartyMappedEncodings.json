@@ -1919,7 +1919,8 @@
     "LURINGMAW": 854,
     "INNARDSPUNCH": 855,
     "THROWNIN": 856,
-    "VERSATILEARTIST": 857
+    "VERSATILEARTIST": 857,
+    "GUTPUNCH": 858
   },
   "moves": {
     "AFTERYOU": 1,
