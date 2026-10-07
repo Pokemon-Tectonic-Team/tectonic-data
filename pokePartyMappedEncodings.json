@@ -1920,7 +1920,8 @@
     "INNARDSPUNCH": 855,
     "THROWNIN": 856,
     "VERSATILEARTIST": 857,
-    "GUTPUNCH": 858
+    "GUTPUNCH": 858,
+    "SCALEVEIL": 859
   },
   "moves": {
     "AFTERYOU": 1,
@@ -3320,7 +3321,8 @@
     "MEGAWATTSHOCK": 1395,
     "BITTERBILE": 1396,
     "DEMANDINGGAZE": 1397,
-    "HYDRASTRIKE": 1398
+    "HYDRASTRIKE": 1398,
+    "EGGSCHANGE": 1399
   },
   "heldItems": {
     "AIRBALLOON": 1,
