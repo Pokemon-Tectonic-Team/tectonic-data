@@ -1921,7 +1921,8 @@
     "THROWNIN": 856,
     "VERSATILEARTIST": 857,
     "GUTPUNCH": 858,
-    "SCALEVEIL": 859
+    "SCALEVEIL": 859,
+    "KNAPPINGSTONES": 860
   },
   "moves": {
     "AFTERYOU": 1,
